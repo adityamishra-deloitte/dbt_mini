@@ -1,0 +1,66 @@
+
+version: 2
+
+models:
+  - name: my_first_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: my_second_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: reputation
+    description: "top 10 Reputation"
+    columns:
+      - name: Id
+        description:
+        tests:
+          - unique
+          - not_null
+
+  - name: popularBadges
+    description: "top 10 most popular Badges"
+    columns:
+      - name: Id
+        description:
+        tests:
+          - unique
+          - not_null
+
+  - name: questionsLikes
+    description: "questions asked by string nau"
+    columns:
+      - name: Id
+        description:
+        tests:
+          - unique
+          - not_null
+
+  - name: questions
+    description: "questions asked by display name alexandur"
+    columns:
+      - name: Id
+        description:
+        tests:
+          - unique
+          - not_null
+
+  - name: questionsCount
+    description: "questions asked by reputation greater than 75000"
+    columns:
+      - name: Id
+        description:
+        tests:
+          - unique
+          - not_null
