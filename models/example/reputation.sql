@@ -1,1 +1,1 @@
-SELECT Id,DisplayName,Reputation FROM Users ORDER BY Reputation DESC LIMIT 10
+SELECT Id,DisplayName,Reputation FROM "DATABASE"."ANALYTICS"."USERSDEMO" ORDER BY Reputation DESC LIMIT 10
